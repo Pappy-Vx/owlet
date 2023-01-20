@@ -1,0 +1,129 @@
+.hero_container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 55% 45%;
+    gap: 5rem;
+    background: var(--color-bg);
+    overflow: hidden;
+    padding:  5rem;
+    /* height: 90vh; */
+}
+.hero_content {
+    padding: 5rem 0;
+    padding-right: 5rem;
+}
+.hero_content h1 {
+font-family: Poppins;
+font-size: 40px;
+font-weight: 700;
+/* line-height: 20px; */
+letter-spacing: 0.10000000149011612px;
+text-align: left;
+padding-bottom: 1rem;
+
+}
+.hero_content h1 > span {
+    color: var(--color-primary);
+}
+.hero_download {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.download_box {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 25px ;
+gap: 6.44px; 
+
+
+background: #FFFFFF;
+box-shadow: 1.28889px 7.08889px 19.3333px rgba(51, 51, 51, 0.08);
+border-radius: 6.44444px;
+color: var(--color-bg);
+}
+.download_box a {
+color: var(--color-bg);
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px; 
+}
+.download_icon {
+    font-size: 30px;
+}
+
+.ellipse img {
+    
+    width: 685px;
+    height: 321;
+
+}
+
+/* ======== MEDIA QUERY MEDIUM ======= */
+@media screen and (max-width:1024px) {
+    .hero_container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
+        padding-left: 2rem;
+    }
+    .hero_content {
+        padding: 2rem 1rem; 
+        width: 100%;
+        padding-right: 7rem;
+        
+    }
+    .ellipse img {
+            
+        width: 485px;
+        height: 421px;
+        margin-left:50% ; 
+        margin-bottom: 2rem;
+    
+    }
+  }
+  /* ======== MEDIA QUERY SMALL ======= */
+  @media screen and (max-width:600px) {
+    .hero_container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
+        padding-left: 2rem;
+    }
+    .hero_content {
+        padding: 2rem 1rem; 
+        width: 100%;
+        padding-right: 7rem;
+        
+    }
+    .hero_content h1 {
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 700;
+        /* line-height: 20px; */
+        /* letter-spacing: 0.10000000149011612px; */
+        text-align: left;
+        padding-bottom: 1rem;
+        
+        }
+        .hero_download {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+        }
+        .ellipse img {
+            
+            width: 385px;
+            height: 321;
+            margin-left:4rem ; 
+            margin-bottom: 2rem;
+        
+        }
+
+
+  }

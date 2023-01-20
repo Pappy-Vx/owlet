@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.navigator {
+  position: fixed;
+  z-index: 1000;
+  bottom: 1rem;
+  left:  93%;
+  border: none;
+  background-color: transparent;
+  
+  
+}
+.navigator button {
+  border: none;
+  background: none;
+}
+
+.navigator-btn {
+  font-size: 3.3rem;
+  line-height: 2.25rem;
+  color: var(--color-light);
+  background: var(--color-primary);
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  text-align: center;
+  box-shadow: 0 10px 13px 0 rgba(0, 0, 0, .7);
+  transition: var(--transition);
+}
+
+.navigator-btn:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width:1024px) {
+  .navigator {
+    left:  90%;
+  }
+    
+}
+@media screen and (max-width:600px) {
+  .navigator {
+    left:  83%;
+
+    
+  }
+  .navigator-btn {
+    box-shadow: none;
+  }
+
+} 
+
