@@ -22,6 +22,7 @@ text-align: left;
 padding-bottom: 1rem;
 
 }
+
 .hero_content h1 > span {
     color: var(--color-primary);
 }
@@ -58,9 +59,8 @@ gap: 10px;
 }
 
 .ellipse img {
-    
-    width: 685px;
-    height: 321;
+    width: 585px;
+    height: 521;
 
 }
 
@@ -78,11 +78,12 @@ gap: 10px;
         padding-right: 7rem;
         
     }
+    
     .ellipse img {
-            
-        width: 485px;
-        height: 421px;
-        margin-left:50% ; 
+        object-fit: contain; 
+        width: 585px;
+        height: 521px;
+        margin-left:40% ; 
         margin-bottom: 2rem;
     
     }
@@ -111,6 +112,10 @@ gap: 10px;
         padding-bottom: 1rem;
         
         }
+        .hero_content p {
+            padding-right: 5rem;
+            text-align: left;
+        }
         .hero_download {
             display: flex;
             flex-direction: column;
@@ -118,10 +123,11 @@ gap: 10px;
         }
         .ellipse img {
             
-            width: 385px;
-            height: 321;
-            margin-left:4rem ; 
+            width: 485px;
+            height: 421;
+            margin-left:1rem ; 
             margin-bottom: 2rem;
+            object-fit: contain;
         
         }
 
